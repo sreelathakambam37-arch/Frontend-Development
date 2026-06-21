@@ -1,0 +1,43 @@
+/*Default Responsive Design */
+.container{
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    background-color: #679bce;
+}
+/*tablet*/
+@media (max-width: 768px){
+    .container{
+        background-color: #f0a500;
+    }
+    .tablet{
+        display: block;
+    }
+    desktop, .mobile{
+        display: none;
+    }
+}
+/*mobile*/
+@media (max-width:480px){
+    .container{
+        background-color: #f08a5d;
+    }
+    .mobile{
+        display: block;
+    }
+    .desktop, .tablet{
+        display: none;
+    }
+}
+/*desktop*/
+@media (min-width: 769px){
+    .container{
+        background-color: #6a0752;
+    }
+    .desktop{
+        display: block;
+    }
+    .tablet, .mobile{
+        display: none;
+    }
+}
